@@ -12,8 +12,6 @@ vector<int> solution(int N, vector<int> &A) {
 
     for (int k=0; k<M; k++) {
         if (A[k] <= N) {
-            // if A[K] = X, such that 1 ≤ X ≤ N, then operation K is increase(X)
-            // and track max counter
             cout<<"A[k]= "<<A[k]<<endl;
             int counter = std::max(counters[A[k]-1], minimum) + 1;
             cout<<"counter "<<counter<<endl;
